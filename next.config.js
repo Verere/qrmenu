@@ -13,6 +13,7 @@ module.exports = {
     "CLOUD_API": " https://api.cloudinary.com/v1_1/dqomu5hhg/image/upload",
     "GOOOGLE_USER": "linno4inno@gmail.com",
     "GOOOGLE_PASSWORD": "always130#",
+    "DOMAIN": "https://qrmenu-nine.vercel.app/",
     "MONGODB_URL": "mongodb+srv://eddy:eddy@cluster0.482ai.mongodb.net/qrglobalmenu?retryWrites=true",
     "PAYPAL_CLIENT_ID": "AfByFRTaZoJ_MVKVk2VJYWPH2KKeVzs1QKDWVObaSSfJ3bDr86QE3LpVlfoAdeFI-sWSRlJHDHxmbmQE",
     "REACT_APP_PUBLIC_KEY": 'FLWPUBK_TEST-60cdb8880b40a20f0ab307c1d631619e-X',
