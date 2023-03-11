@@ -1,8 +1,10 @@
 {
   "extends": "next/core-web-vitals",
+  "root": true,
   "rule":{
 "@next/next/no-page-custom-font": "off",
 "react/no-unescaped-entities":"off",
 "react/display-name":"off"
+
   }
 }
