@@ -9,13 +9,11 @@ import Products from '../../../../components/Products'
 
 import Timeline from '../../../../components/TimeLine'
 import AddProduct from '../../../../components/AddProduct'
-import Modal from '../../../../components/Modal'
 
 export default function Home(props) { 
 
   const [products, setProducts] = useState(props.products)
 const [close, setClose] = useState(true);   
-const [closeModal, setCloseModal] = useState(true);   
   const router = useRouter()
   const {state, dispatch} = useContext(DataContext)
   const {storedProducts, darkMode} = state
@@ -38,7 +36,7 @@ const filteredProducts = tempProducts.filter(product => product.category === nam
         <link rel="icon" href="/averit.ico" />
       </Head>  
  <Timeline setClose={setClose} handleClick ={handleClick} menu={menu}/>
-   <Products heading='Our menu' product ={products} darkMode={darkMode}  setClose={setClose} setCloseModal={setCloseModal}/>           
+   <Products heading='Our menu' product ={products} darkMode={darkMode}  setClose={setClose} />           
  {!close  && <AddProduct storeId={storeId}  setClose={setClose}/> }
 
     </>

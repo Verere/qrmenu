@@ -6,14 +6,12 @@ import {ProductsContainer,  Img,
     ProductPrice, Btn, EditBtn, DeleteBtn,
     } from './ProductElements'
 import {currencyFormat} from '../../utils/currency'    
-import Delete from '../Delete'
 
 
 
 const Products = ({ product, darkMode, setClose}) => {  
  const { state, dispatch } = useContext(DataContext)
  const { auth} = state
- const [closeModal, setCloseModal] = useState(true);  
 
  const handleEdit=(id)=>{
     dispatch({type: "ADD_ID", payload: {id}})
@@ -51,19 +49,7 @@ const Products = ({ product, darkMode, setClose}) => {
                             <EditBtn onClick={()=>handleEdit(product._id)}>Edit
                                             </EditBtn>
                             
-                            {/* <DeleteBtn 
-                            onClick={() => 
-                                handleDelete({                       
-                              
-                                    data: '', 
-                                    id: product._id, 
-                                    title: product.name,
-                                     type: 'DELETE_PRODUCT' 
-                                })
-                            }
-
-                            >Delete
-                                </DeleteBtn> */}
+                      
                             </Btn>
                            }
                         </ProductCard>
@@ -74,7 +60,6 @@ const Products = ({ product, darkMode, setClose}) => {
             </ProductWrapper>
 
         </ProductsContainer>
-        {!closeModal  && <Delete   setCloseModal={setCloseModal}/> }
         </>
 
     )

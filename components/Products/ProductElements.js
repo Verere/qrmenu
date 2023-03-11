@@ -143,26 +143,26 @@ margin-bottom: .2rem;
 font-size: clamp(1.2rem, 1.5vw, 2rem);
 padding: .7rem 1rem;
 }`
-export const DeleteBtn= styled.button`
-font-size: 2rem;
-padding: 1rem 1.5rem;
-border: none;
-background: #e31837;
-color: #fff;
-transition: 0.2 ease-out;
-border-radius: 50px;
+// export const DeleteBtn= styled.button`
+// font-size: 2rem;
+// padding: 1rem 1.5rem;
+// border: none;
+// background: #e31837;
+// color: #fff;
+// transition: 0.2 ease-out;
+// border-radius: 50px;
 
 
-&:hover {
-    background: #ffc500;
-    transition: 0.2 ease-out;
-    cursor: pointer;
-    color: #000;
-}
-@media ${(props) => props.theme.breakpoints.sm }{
-font-size: clamp(1.2rem, 1.5vw, 2rem);
-padding: .7rem 1rem;
-}`
+// &:hover {
+//     background: #ffc500;
+//     transition: 0.2 ease-out;
+//     cursor: pointer;
+//     color: #000;
+// }
+// @media ${(props) => props.theme.breakpoints.sm }{
+// font-size: clamp(1.2rem, 1.5vw, 2rem);
+// padding: .7rem 1rem;
+// }`
 
 export const Btn= styled.div`
 display: flex;
