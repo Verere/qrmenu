@@ -60,8 +60,8 @@ export async function getServerSideProps(context) {
     const {storeId}= params
     const res = await getData(`stores/${storeId}`)
     return {
-      props: { store: res.store,
-    storeId: storeId,
+      props: { store: res.store|| null,
+    storeId: storeId|| null,
      }, 
     }
 }
