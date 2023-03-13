@@ -44,12 +44,12 @@ const filteredProducts = tempProducts.filter(product => product.category === nam
   )
  }
 
-export async function getStaticProps({params, query}) {
+export async function getServerSideProps({params, query}) {
     const {storeId}= params
     const menu = query.menu 
 
   const res = await getData(
-      `stores/${storeId}/product?menu=${menu}`
+      `stores/${storeId}/product?menu=${menu}.limit(90)`
   )
 
   return {
