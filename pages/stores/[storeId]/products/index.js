@@ -44,7 +44,7 @@ const filteredProducts = tempProducts.filter(product => product.category === nam
   )
  }
 
-export async function getServerSideProps({params, query}) {
+export async function getStaticProps({params, query}) {
     const {storeId}= params
     const menu = query.menu 
 
