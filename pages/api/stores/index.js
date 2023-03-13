@@ -18,7 +18,7 @@ export default async function handler (req, res){
 
 const getStores = async (req, res) => {
      try {
-        const stores = await Stores.find()
+        const stores = await Stores.find().limit(10)
 
       res.json({stores})
 

@@ -39,7 +39,7 @@ class APIfeatures {
 const getProducts = async (req, res) => {
     try {
         const { storeId } = req.query;
-         const features = new APIfeatures(Products.find({store: storeId}), req.query).filtering()
+         const features = new APIfeatures(Products.find({store: storeId}), req.query).filtering().limit(90)
         const products = await features.query      
         res.json({         
             result: products.length,
