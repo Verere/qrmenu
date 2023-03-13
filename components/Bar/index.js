@@ -21,7 +21,9 @@ const Bar = ({ handleSelectMenu, handleCategory}) => {
 
     const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+
   const handleClick = () => setClick(!click);
+  
   const {state, dispatch} = useContext(DataContext)
   const { auth } = state
   

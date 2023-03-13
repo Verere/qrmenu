@@ -48,7 +48,7 @@ const Store = ({stores}) => {
 
 export default Store
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   
     const res = await getData(`stores`)
     // server side rendering
