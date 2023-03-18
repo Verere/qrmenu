@@ -64,7 +64,7 @@ const Navbar = () => {
                    </Link>
                  </NavItem>
                <NavItem>
-               <Link href='#' >
+               <Link href='/stores' >
                <NavLinks >Register</NavLinks>
                 </Link>
               </NavItem> 
