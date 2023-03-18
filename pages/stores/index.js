@@ -31,14 +31,14 @@ const Store = ({stores}) => {
      
     return(
         <div >
-       
                  {
+                    stores?
                 stores.map(store=> (
                     < >
                     <StoreList key={store._id} store ={store}/>
-
                     </>
-                ))
+                    ))
+                    :[]
             }
            
 
