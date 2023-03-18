@@ -1,0 +1,48 @@
+.btncontainer{
+
+    display: flex;  
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 20vh;
+    width: 25vw;
+    margin: 1rem auto;
+/*     
+    min-height: 50vh;
+    width: 70%;
+    margin: auto;
+    margin-top: 10rem;
+    justify-content: center;
+    grid-template-columns: minmax(1fr, min-content); */
+}
+
+.btn{
+font: 2rem sans-serif;
+background: transparent;
+color:#fff;
+text-decoration: none;
+text-transform: uppercase;
+border-bottom: 1px solid wheat;
+margin-bottom: 1rem;
+outline: none;
+padding: .5rem 3rem;
+font-size: clamp(1.5rem, 1.5vw, 2.0rem);
+ @media screen and (max-width: 400px) {
+font-size: clamp(1.0rem, 1.5vw, 2.0rem);
+width: 100vw;
+}
+}
+
+.btncreate{
+    margin-top: 10rem;
+    opacity: 0;
+    visibility: hidden;
+    width: 40vw;
+    background-color: red;
+}
+
+.btnMenu{
+    color: goldenrod;
+    text-transform: uppercase;
+}
