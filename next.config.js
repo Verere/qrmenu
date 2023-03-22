@@ -7,7 +7,7 @@ const nextConfig = {
  },
   env: {
     "ACCESS_TOKEN_SECRET": "123456789e654se89790",
-    "BASE_URL": "http://localhost:3000",
+    "BASE_URL": "https://qrmenu-nine.vercel.app/",
     "CLOUD_UPDATE_PRESET": "qrglobalmenu_store",
     "CLOUD_NAME": "dqomu5hhg",
     "CLOUD_API": " https://api.cloudinary.com/v1_1/dqomu5hhg/image/upload",
